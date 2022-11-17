@@ -4,9 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
+
+    <title>Weather Now</title>
   </head>
   <body>
-    <div id="app">App</div>
+    <div id="app">
+      <h1 class="logo">Weather now</h1>
+      <form class="form" autocomplete="off">
+        <label for="searchBar">
+          <input
+            class="search__bar"
+            type="search"
+            name="search"
+            id="searchBar"
+            placeholder="City name"
+          />
+          <button class="weather__btn--search" id="searchBtn" type="submit">
+            submit
+          </button>
+        </label>
+      </form>
+      <div id="weather" class="weather weather__container"></div>
+    </div>
   </body>
 </html>

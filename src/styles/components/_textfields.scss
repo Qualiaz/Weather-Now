@@ -1,0 +1,21 @@
+.search__bar {
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding: 0.5rem;
+  width: 10rem;
+  transition: 0.2s;
+
+  &:focus {
+    outline: none;
+    transform: translate(-2px, -2px);
+    box-shadow: 1px 1px #fff;
+  }
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.815);
+  }
+  &::-webkit-search-cancel-button {
+    display: none;
+  }
+}

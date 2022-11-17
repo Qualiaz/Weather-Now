@@ -1,0 +1,78 @@
+#app {
+  background-color: rgba(21, 58, 63, 0.533);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 2rem;
+    width: 360px;
+    position: relative;
+  }
+
+  &__el {
+    display: block;
+    align-self: center;
+    &::before {
+      color: rgb(70, 70, 70);
+      font-size: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__city {
+    order: 6;
+    &::before {
+      content: "City";
+    }
+  }
+
+  &__country {
+    order: 5;
+    &::before {
+      content: "Country";
+    }
+  }
+
+  &__temperature {
+    order: 2;
+    &::before {
+      content: "Temp";
+    }
+    &::after {
+      margin-left: 0.3rem;
+    }
+    &--C {
+      &::after {
+        content: "°C";
+      }
+    }
+    &--F {
+      &::after {
+        content: "°F";
+      }
+    }
+  }
+
+  &__weather {
+    order: 3;
+    &::before {
+      content: "City";
+    }
+  }
+
+  &__humidity {
+    order: 4;
+    &::before {
+      content: "Humidity";
+    }
+  }
+}
